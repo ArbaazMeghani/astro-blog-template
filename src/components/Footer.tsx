@@ -1,7 +1,10 @@
 const Footer = () => {
   return (
     <footer>
-      <p>© {new Date().getFullYear()}, Built with Gatsby</p>
+      <p>
+        © {new Date().getFullYear()},{" "}
+        <a href="https://github.com/arbaazmeghani">Arbaaz M</a>
+      </p>
     </footer>
   );
 };
