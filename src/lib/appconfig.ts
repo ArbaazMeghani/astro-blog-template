@@ -1,4 +1,4 @@
-export const AppConfig = {
+const AppConfig = {
   site_name: "Blog Template",
   title: "Blog Template",
   description:
@@ -7,3 +7,5 @@ export const AppConfig = {
   locale_region: "en-us",
   locale: "en",
 };
+
+export default AppConfig;

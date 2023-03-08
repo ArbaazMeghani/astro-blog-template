@@ -1,0 +1,39 @@
+---
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Seo from "../components/Seo.astro";
+import Newsletter from "../components/Newsletter";
+
+export interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    date: string;
+    category: string;
+    author: string;
+    image: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+const { title, description, date, category, author, image } = frontmatter;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <Seo
+      title={title}
+      description={description}
+      image={image}
+      frontmatter={frontmatter}
+      author={author}
+    />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <Newsletter />
+    <Footer />
+  </body>
+</html>
