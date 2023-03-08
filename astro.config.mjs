@@ -21,7 +21,7 @@ export default defineConfig({
       projectId: "n22nch50",
       dataset: "production",
       apiVersion: "2021-03-25",
-      useCdn: false,
+      useCdn: true,
     }),
   ],
   output: "server",
